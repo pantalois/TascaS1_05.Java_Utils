@@ -12,11 +12,23 @@ import java.util.Date;
 
 public class DirectoryListToolWrite {
 
+    public static File directoryPathExists(String path){
+        File myDirectory = new File(path);
+        if (!myDirectory.exists()) {
+            System.out.println("Error: Directory does not exist");
+            return null;
+        }
+        if (!myDirectory.isDirectory()) {
+            System.out.println("Error: Path is not a directory.");
+            return null;
+        }
+        return myDirectory;
+    }
 
     public static void listTree(String path, String output) {
-        int level = -1;
+        int level = 0;
         try (PrintWriter writer = new PrintWriter(new FileWriter(output))) {
-            listRecursive(new File(path), level + 1, writer);
+            listRecursive(new File(path), level, writer);
             System.out.println("Directory tree saved to " + output);
 
         } catch (IOException e) {

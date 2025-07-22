@@ -15,7 +15,7 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-.class
+*.class
 .idea
 .iml
 ### NetBeans ###
