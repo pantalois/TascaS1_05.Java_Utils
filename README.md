@@ -1,27 +1,52 @@
-▶️ Ejecución
+Task S1.5.Java_Utils
 
-Para ejecutar los diferentes ejercicios de este repositorio, abre tu terminal y sitúate en la raíz del proyecto. Cada ejercicio se ejecuta mediante la clase correspondiente en su subdirectorio dentro de `src/level_1/`.
+📄 Description
 
-**Ejercicio 1 (Listar contenidos de un directorio alfabéticamente):**
+This project consists of developing and practicing the concept of (I/O) Input/Output files in Java and Serialise and Deserialise objects in files .ser. It allows us to work with data of different types of files and to share information in a lightest way.
+
+💻 Technologies Used
+
+Java (recommended version: 17 or higher)
+
+📋 Requirements
+
+Java JDK 17+ Git A Java-compatible IDE
+
+🛠️ Installation
+
+Clone this repository: git clone https://github.com/pantalois/TascaS1_05.Java_Utils.git
+
+Navigate to the project directory: cd https://github.com/pantalois/TascaS1_05.Java_Utils.git
+
+
+▶️ Execution
+
+Before running any exercise for the first time, you'll need to compile the source files. You can compile all the necessary classes from the src directory:
+
+**Exercici_1**
 ```bash
-java -cp src level_1.exercici_1.Main <ruta_del_directorio>
-```
-Donde `<ruta_del_directorio>` es el path que quieres listar.
+javac level_1/exercici_1/Main.java
 
-**Ejercicio 2 (Mostrar árbol de directorios en consola):**
-```bash
-java -cp src level_1.exercici_2.Main <ruta_del_directorio>
+java level_1/exercici_1/Main level_1/exercici_1/DirectoryArgs 
 ```
-Donde `<ruta_del_directorio>` es el path que quieres mostrar en formato árbol.
+**Exercici_2**
+```bash
+javac level_1/exercici_2.Main.java
 
-**Ejercicio 3 (Guardar árbol de directorios en un archivo):**
-```bash
-java -cp src level_1.exercici_3.Main <ruta_del_directorio> <archivo_salida>
+java level_1/exercici_2/Main level_1/exercici_2/DirectoryArgs 
 ```
-Donde `<ruta_del_directorio>` es el directorio a listar y `<archivo_salida>` el archivo donde se guardará el resultado.
-
-**Ejercicio 4 (Guardar árbol de directorios en archivo y mostrar el contenido):**
+**Exercici_3**
 ```bash
-java -cp src level_1.exercici_4.Main <ruta_del_directorio> <archivo_salida>
+javac level_1/exercici_3.Main.java
+java level_1/exercici_3/Main level_1/exercici_3/DirectoryArgs  <outputFileName>
 ```
-El resultado se guarda en `<archivo_salida>` y se muestra por pantalla.
+**Exercici_4**
+```bash
+javac level_1/exercici_4.Main.java
+java level_1/exercici_4/Main level_1/exercici_4/DirectoryArgs <outputFileName>
+```
+**Exercici_5**
+```bash
+javac level_1/exercici_5.Main.java
+java level_1/exercici_5/Main
+```
