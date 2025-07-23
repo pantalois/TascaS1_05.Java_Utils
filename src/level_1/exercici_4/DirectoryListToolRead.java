@@ -10,6 +10,19 @@ import java.util.Date;
 public class DirectoryListToolRead{
 
 
+    public static File directoryPathExists(String path){
+        File myDirectory = new File(path);
+        if (!myDirectory.exists()) {
+            System.out.println("Error: Directory does not exist");
+            return null;
+        }
+        if (!myDirectory.isDirectory()) {
+            System.out.println("Error: Path is not a directory.");
+            return null;
+        }
+        return myDirectory;
+    }
+
     public static void readFile(String output){
 
         try{
@@ -24,7 +37,6 @@ public class DirectoryListToolRead{
     }
 
     public static void listTree(String path, String output) {
-        int level = -1;
         try (PrintWriter writer = new PrintWriter(new FileWriter(output))) {
             listRecursive(new File(path), writer);
             System.out.println("Directory tree saved to " + output);
