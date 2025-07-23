@@ -26,13 +26,11 @@ Before running any exercise for the first time, you'll need to compile the sourc
 **Exercici_1**
 ```bash
 javac level_1/exercici_1/Main.java
-
 java level_1/exercici_1/Main level_1/exercici_1/DirectoryArgs 
 ```
 **Exercici_2**
 ```bash
 javac level_1/exercici_2.Main.java
-
 java level_1/exercici_2/Main level_1/exercici_2/DirectoryArgs 
 ```
 **Exercici_3**
