@@ -18,7 +18,6 @@ public class AlphabeticList {
         }
         else {
             System.out.println("File not found");
-            return;
         }
     }
 }

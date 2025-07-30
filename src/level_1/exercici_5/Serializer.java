@@ -6,8 +6,7 @@ import java.io.*;
 public class Serializer{
 
     public static void serializeObject(ObjectToSerialize objectToSerialize, String path){
-        try (ObjectOutputStream outputStream =
-                     new ObjectOutputStream(new FileOutputStream(path))) {
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(path))) {
 
             outputStream.writeObject(objectToSerialize);
             System.out.println("Object serialized successfully");
@@ -26,6 +25,8 @@ public class Serializer{
 
             if (obj != null) {
                 System.out.println("Object deserialized successfully");
+                System.out.println("Name: " + obj.getName());
+                System.out.println("Id: " + obj.getId());
 
             } else {
                 System.out.println("Deserialization returned null object");

@@ -50,11 +50,7 @@ public class DirectoryListToolWrite {
             String dataMod = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
                     .format(new Date(element.lastModified()));
 
-            writer.println(dataMod + " " + type + " " + element.getName());
-
-            System.out.println(" ".repeat(level * 4) +
-                    type + " " + element.getName() +
-                    " - Last modification: " + dataMod);
+            writer.println(type + " " + element.getName()  + " " + dataMod);
 
             if (element.isDirectory()) {
                 listRecursive(element, level + 1, writer);
